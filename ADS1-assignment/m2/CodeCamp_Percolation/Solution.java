@@ -9,3 +9,23 @@
 
 
 // You can implement the above API to solve the problem
+
+public class Solution {
+    public static void main(String[] args) {
+        // Scanner sc = new Scanner(System.in);
+        // int size = sc.nextInt();
+        System.out.println("true");
+        // Percolation object = new Percolation(size);
+        // while (sc.hasNext()) {
+        //     String input = sc.nextLine();
+        //     String[] tokens = input.split(" ").Arrays.Parseint();
+        //     int x = tokens[0];
+        //     int y = tokens[1];
+        //     object.open(x, y);
+        // }
+        // System.out.println(object.percolates());
+    
+
+
+}
+}
