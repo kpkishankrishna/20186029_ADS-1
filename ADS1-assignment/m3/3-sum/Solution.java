@@ -57,7 +57,8 @@ class Sum {
 @param number the num passed
 @param index the index
 */
-public static int binarySearch(final int[] array, final int number, final int index) {
+public static int binarySearch(final int[] array, final int number,
+ final int index) {
          int hi = array.length - 1;
         int lo = index;
          while (lo <= hi) {
