@@ -14,13 +14,13 @@ private Solution() {
 */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        Sum u = new Sum();
+        Sum object = new Sum();
         int size = Integer.parseInt(sc.nextLine());
-        int[] arr = new int[size];
+        int[] array = new int[size];
         for (int i = 0; i < size; i++) {
-            arr[i] = Integer.parseInt(sc.nextLine());
+            array[i] = Integer.parseInt(sc.nextLine());
         }
-        u.counntof(arr);
+        object.counntof(array);
     }
 }
 /**.
@@ -33,17 +33,17 @@ class Sum {
     Sum() { }
 /**.
 @counntof() the function
-@param arr1 the array
+@param array the array
 */
-    public void counntof(final int[] arr1) {
+    public void counntof(final int[] array) {
         int count = 0;
-        Arrays.sort(arr1);
-        int size = arr1.length;
+        Arrays.sort(array);
+        int size = array.length;
         for (int i = 0; i < size - 1; i++) {
             int num = 0;
             for (int j = i + 1; j < size; j++) {
-                num = -1 * (arr1[i] + arr1[j]);
-                    if (binarySearch(arr1, num, j + 1) != -1) {
+                num = -1 * (array[i] + array[j]);
+                    if (binarySearch(array, num, j + 1) != -1) {
                         count++;
                     }
             }
@@ -53,21 +53,21 @@ class Sum {
 /**.
 @binarySearch() the function
 @return return the index
-@param a the array
-@param key the num passed
-@param l the index
+@param array the array
+@param number the num passed
+@param index the index
 */
-public static int binarySearch(final int[] a, final int key, final int l) {
-         int hi = a.length - 1;
-        int lo = l;
+public static int binarySearch(final int[] array, final int number, final int index) {
+         int hi = array.length - 1;
+        int lo = index;
          while (lo <= hi) {
-         int mid = lo + (hi - lo) / 2;
-         if (key < a[mid]) {
-            hi = mid - 1;
-         } else if (key > a[mid]) {
-            lo = mid + 1;
+         int centre = lo + (hi - lo) / 2;
+         if (number < array[centre]) {
+            hi = centre - 1;
+         } else if (number > array[centre]) {
+            lo = centre + 1;
         } else {
-        return mid;
+        return centre;
         }
     }
     return -1;
