@@ -1,117 +1,127 @@
 import java.util.Scanner;
 /**
- * Class for linked liststack.
+ * LinkedList class.
  */
-class LinkedListstack {
+class LinkedList {
     /**
-     * { var_description }
+     * Node start.
      */
-    private Node first = null;
+    private Node start = null;
     /**
-     * Class for node.
+     * class node.
      */
-    private class Node {
+    class Node {
         /**
-         * { var_description }
+         * String item.
          */
-        char item;
+        private String item;
         /**
-         * { var_description }
+         * Node next.
          */
-        Node nextAddress;
+        private Node next;
+        /**
+         * returns item.
+         * @return node.
+         */
+        public String getItem() {
+            return this.item;
+        }
     }
     /**
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
+     * stack is empty or not.
+     * @return true or false.
      */
-    public char top() {
-        return first.item;
-    }
-    /**
-     * Determines if empty.
-     *
-     * @return     True if empty, False otherwise.
-     */
-
-
     public boolean isEmpty() {
-        return first == null;
+        return start == null;
     }
     /**
-     * { function_description }
-     *
-     * @param      item  The item
+     * push method.
+     * @param item element to push.
      */
-    public void push(char item) {
-        Node oldfirst = first;
-        first = new Node();
-        first.item = item;
-        first.nextAddress = oldfirst;
+    public void push(final String item) {
+        Node prev = start;
+        start = new Node();
+        start.item = item;
+        start.next = prev;
     }
     /**
-     * { function_description }
-     *
-     * @return     { description_of_the_return_value }
+     * pop method.
+     * @return the poped element.
      */
-    public char pop() {
-        char item = first.item;
-        first = first.nextAddress;
+    public String pop() {
+        String item = start.item;
+        start = start.next;
         return item;
+    }
+    /**
+     * top node.
+     * @return first or top Node.
+     */
+    public Node getStart() {
+        return start;
     }
 }
 /**
- * Class for solution.
+ * Solution class.
  */
-public class Solution {
+public final class Solution {
     /**
-     * { function_description }
-     *
-     * @param      args  The arguments
+     * constructor.
      */
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size = Integer.parseInt(sc.nextLine());
-        for (int i = 0; i < size; i++) {
-            String line = sc.next();
-            if (Paranthesis(line)) {
-                System.out.println("YES");
-            } else {
-                System.out.println("NO");
-            }
-
-        }
+    private Solution() {
     }
     /**
-     * { function_description }
+     * main method.
      *
-     * @param      s     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @param args command args.
      */
-    public static boolean Paranthesis(String s) {
-        LinkedListstack object = new LinkedListstack();
-        int length = s.length();
-        for (int i = 0; i < length; i++) {
-            char ch = s.charAt(i);
-            if (ch == '(' || ch == '{' || ch == '[') {
-                object.push(ch);
-            } else {
-                if (object.isEmpty()){
-                   return false; 
-                } 
-                if (ch == ')' && object.top() == '(') {
-                    object.pop();
-                } else if (ch == '}' && object.top() == '{') {
-                    object.pop();
-                } else if (ch == ']' && object.top() == '[') {
-                    object.pop();
-                } else {
-                   return false; 
-                } 
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = Integer.parseInt(sc.nextLine());
+        while (sc.hasNext()) {
+            int x = 0;
+            LinkedList list = new LinkedList();
+            String[] s = sc.nextLine().split("");
+            for (int i = 0; i < s.length; i++) {
+                if (s[i].equals("[") || s[i].equals(
+                    "{") || s[i].equals("(")) {
+                    list.push(s[i]);
+                } else if (s[i].equals("]")) {
+                    if (list.isEmpty()) {
+                        x = 1;
+                        break;
+                    }
+                    if (list.getStart().getItem().equals("[")) {
+                        list.pop();
+                    }
+                } else if (s[i].equals("}")) {
+                    if (list.isEmpty()) {
+                        x = 1;
+                        break;
+                    }
+                    if (list.getStart().getItem().equals("{")) {
+                        list.pop();
+                    }
+                } else if (s[i].equals(")")) {
+                    if (list.isEmpty()) {
+                        x = 1;
+                        break;
+                    }
+                    if (list.getStart().getItem().equals("(")) {
+                        list.pop();
+                    }
+                }
             }
-
+            if (x == 1) {
+                System.out.println("NO");
+            } else {
+                if (list.isEmpty()) {
+                    System.out.println("YES");
+                } else {
+                    System.out.println("NO");
+                }
+            }
         }
-        return object.isEmpty();
     }
 }
+
