@@ -4,9 +4,9 @@ import java.util.Scanner;
  */
 public class Solution {
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
-	 * @param      args  The arguments
+	 * @param      args  The arguments.
 	 */
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
