@@ -4,6 +4,7 @@ class LinkedList {
      * Node start.
      */
     private Node start = null;
+    private int size = 0;
     /**
      * class node.
      */
@@ -40,6 +41,7 @@ class LinkedList {
         start = new Node();
         start.item = item;
         start.next = prev;
+        size++;
     }
     /**
      * pop method.
@@ -48,7 +50,11 @@ class LinkedList {
     public String pop() {
         String item = start.item;
         start = start.next;
+        size--;
         return item;
+    }
+    public int size() {
+    	return size;
     }
     /**
      * top node.
@@ -72,7 +78,11 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(LinkedList list) {
-    	return list.pop();
+    	String number = "";
+        for (int i = 0; i< list.size(); i++) {
+        	number += list.pop();           
+        }
+        return number;
 
     }
 
