@@ -79,7 +79,7 @@ class LinkedList {
 /**
  * Class for add large numbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
     /**
      * Constructs the object.
      */
@@ -160,7 +160,7 @@ class AddLargeNumbers {
  * Class for solution.
  */
 
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
