@@ -178,6 +178,8 @@ public class Solution {
             LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
+        default:
+        break;
         }
     }
 
