@@ -92,13 +92,14 @@ class AddLargeNumbers {
     	int a = 0;
     	int b = 0;
         for (int i = 0; i< list1.size(); i++) {
-        	number += list1.pop();
-        	a = Integer.parseInt(number);           
+        	number += list1.pop();        	           
         }
+        a = Integer.parseInt(number);
+
         for (int i = 0; i< list2.size(); i++) {
-        	number += list2.pop();
-        	b = Integer.parseInt(number);           
+        	number += list2.pop();         
         }
+        b = Integer.parseInt(number);
         System.out.println(a + b);
         return null;
 
