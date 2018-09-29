@@ -90,11 +90,16 @@ class AddLargeNumbers {
     	LinkedList obj = new LinkedList();
     	String number = "";
     	int a = 0;
+    	int b = 0;
         for (int i = 0; i< list1.size(); i++) {
         	number += list1.pop();
         	a = Integer.parseInt(number);           
         }
-        System.out.println(a);
+        for (int i = 0; i< list2.size(); i++) {
+        	number += list1.pop();
+        	b = Integer.parseInt(number);           
+        }
+        System.out.println(a + b);
         return null;
 
 
