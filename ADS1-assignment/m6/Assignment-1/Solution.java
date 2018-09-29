@@ -88,18 +88,19 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	LinkedList obj = new LinkedList();
-    	String number = "";
+    	String number1 = "";
+    	String number2 = "";
     	int a = 0;
     	int b = 0;
         for (int i = 0; i< list1.size(); i++) {
-        	number += list1.pop();        	           
+        	number1 += list1.pop();        	           
         }
-        a = Integer.parseInt(number);
+        a = Integer.parseInt(number1);
 
         for (int i = 0; i< list2.size(); i++) {
-        	number += list2.pop();         
+        	number2 += list2.pop();         
         }
-        b = Integer.parseInt(number);
+        b = Integer.parseInt(number2);
         System.out.println(a + b);
         return null;
 
