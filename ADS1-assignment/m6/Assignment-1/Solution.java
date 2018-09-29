@@ -81,6 +81,12 @@ class LinkedList {
  */
 class AddLargeNumbers {
     /**
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
+
+    }
+    /**
      * numberToDigits.
      *
      * @param      number  The number
@@ -155,6 +161,12 @@ class AddLargeNumbers {
  */
 
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     /**
      * main.
      *
