@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 class LinkedList {
     /**
      * Node start.
@@ -91,20 +92,21 @@ class AddLargeNumbers {
     	String number1 = "";
     	String number2 = "";
     	String sum = "";
-    	int a = 0;
-    	int b = 0;
-    	int c = 0;
+    	// BigInteger a = 0;
+    	// BigInteger b = 0;
+    	// BigInteger c = 0;
         for (int i = 0; i< list1.size(); i++) {
         	number1 += list1.pop();        	           
         }
-        a = Integer.parseInt(number1);
+        BigInteger first  = new BigInteger(number1);
 
         for (int i = 0; i< list2.size(); i++) {
         	number2 += list2.pop();         
         }
-        b = Integer.parseInt(number2);
-        c = a+b;
-        sum = Integer.toString(c);
+        BigInteger second = new BigInteger(number2);
+        // c = a+b;
+        BigInteger sum1 = first.add(second);
+        sum = sum1.toString();
         obj.push(sum);
         return obj;     
 
