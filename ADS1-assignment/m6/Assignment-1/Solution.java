@@ -65,8 +65,17 @@ class LinkedList {
         return start;
     }
 }
-class AddLargeNumbers { 
-    
+/**
+ * Class for add large numbers.
+ */
+class AddLargeNumbers {
+	/**
+	 * numberToDigits.
+	 *
+	 * @param      number  The number
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
     public static LinkedList numberToDigits(String number) {
     	LinkedList obj = new LinkedList();
     	String[] a = new String[]{number};
@@ -77,6 +86,13 @@ class AddLargeNumbers {
     	
 
     }
+    /**
+     * digitsToNumber.
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public static String digitsToNumber(LinkedList list) {
     	String number = "";
@@ -86,6 +102,14 @@ class AddLargeNumbers {
         return number;
 
     }
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	LinkedList obj = new LinkedList();
@@ -114,8 +138,16 @@ class AddLargeNumbers {
 
     }
 }
+/**
+ * Class for solution.
+ */
 
 public class Solution {
+	/**
+	 * main.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
