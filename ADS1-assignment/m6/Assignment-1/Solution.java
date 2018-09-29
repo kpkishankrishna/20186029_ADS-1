@@ -96,7 +96,7 @@ class AddLargeNumbers {
         	a = Integer.parseInt(number);           
         }
         for (int i = 0; i< list2.size(); i++) {
-        	number += list1.pop();
+        	number += list2.pop();
         	b = Integer.parseInt(number);           
         }
         System.out.println(a + b);
