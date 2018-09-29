@@ -69,7 +69,7 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(LinkedList list) {
-    	return null;
+    	return list.pop();
 
     }
 
