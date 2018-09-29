@@ -87,7 +87,16 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-    	return null;
+    	LinkedList obj = new LinkedList();
+    	String number = "";
+    	int a = 0;
+        for (int i = 0; i< list1.size(); i++) {
+        	number += list1.pop();
+        	a = Integer.parseInt(number);           
+        }
+        System.out.println(a);
+        return null;
+
 
 
     }
