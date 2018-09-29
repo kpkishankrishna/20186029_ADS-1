@@ -122,8 +122,8 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 
-    public static LinkedList addLargeNumbers(LinkedList list1,
-     LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1,
+     final LinkedList list2) {
         LinkedList obj = new LinkedList();
         String number1 = "";
         String number2 = "";
