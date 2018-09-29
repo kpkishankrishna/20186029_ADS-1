@@ -62,7 +62,10 @@ class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
     	LinkedList obj = new LinkedList();
-    	obj.push(number);
+    	String[] a = new String[]{number};
+    	for (int i = 0; i < a.length; i++) {
+    		obj.push(a[i]);
+    	}
     	return obj;
     	
 
@@ -75,6 +78,7 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	return null;
+
 
     }
 }
