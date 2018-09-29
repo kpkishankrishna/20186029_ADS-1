@@ -87,7 +87,7 @@ class AddLargeNumbers {
      *
      * @return     { description_of_the_return_value }
      */
-    public static LinkedList numberToDigits(String number) {
+    public static LinkedList numberToDigits(final String number) {
         LinkedList obj = new LinkedList();
         String[] a = new String[] {number};
         for (int i = 0; i < a.length; i++) {
@@ -105,7 +105,7 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 
-    public static String digitsToNumber(LinkedList list) {
+    public static String digitsToNumber(final LinkedList list) {
         String number = "";
         for (int i = 0; i < list.size(); i++) {
             number += list.pop();
@@ -122,7 +122,8 @@ class AddLargeNumbers {
      * @return     { description_of_the_return_value }
      */
 
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(LinkedList list1,
+     LinkedList list2) {
         LinkedList obj = new LinkedList();
         String number1 = "";
         String number2 = "";
