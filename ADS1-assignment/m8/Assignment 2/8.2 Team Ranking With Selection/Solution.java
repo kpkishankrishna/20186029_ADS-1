@@ -29,7 +29,8 @@ public final class Solution {
         Table t = new Table();
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
-            cricketteams[length++] = new Team(line[0], Integer.parseInt(line[1]),
+            cricketteams[length++] = new Team(line[0],
+             Integer.parseInt(line[1]),
                      Integer.parseInt(line[2]), Integer.parseInt(line[THREE]));
         }
         System.out.println(t.leaderboard(cricketteams, length));
