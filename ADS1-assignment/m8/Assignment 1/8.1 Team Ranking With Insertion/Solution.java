@@ -28,8 +28,10 @@ public final class Solution {
         Table table = new Table();
         while (scan.hasNext()) {
             String[] array = scan.nextLine().split(",");
-            teamsofcricket[length++] = new Team(array[0], Integer.parseInt(array[1]),
-                     Integer.parseInt(array[2]), Integer.parseInt(array[THREE]));
+            teamsofcricket[length++] = new Team(array[0],
+             Integer.parseInt(array[1]),
+                     Integer.parseInt(array[2]),
+                      Integer.parseInt(array[THREE]));
         }
         System.out.println(table.leaderboard(teamsofcricket, length));
     }
