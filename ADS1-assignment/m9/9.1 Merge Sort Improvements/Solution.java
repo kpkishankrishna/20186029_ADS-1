@@ -71,7 +71,8 @@ class Merge {
             for (int i = low; i <= high; i++) {
                 newarray[i] = array[i];
             }
-            System.out.println("Array is already sorted. So, skipped the call to merge...");
+            System.out.
+            println("Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merge(array, newarray, low, mid, high);
@@ -94,9 +95,10 @@ class Merge {
      * @param      high  The high
      */
 
-    public static void insertionSort(final Comparable[] a, final int low, final int high) {
-        for (int i = low; i <= high; i++){
-            for (int j = i; j > low && less(a[j], a[j - 1]); j--){
+    public static void insertionSort(final Comparable[] a, final int low,
+     final int high) {
+        for (int i = low; i <= high; i++) {
+            for (int j = i; j > low && less(a[j], a[j - 1]); j--) {
                 exch(a, j, j - 1);
             }
         }
@@ -144,7 +146,8 @@ class Merge {
      * @return     True if sorted, False otherwise.
      */
 
-    public static boolean isSorted(final Comparable[] a, final int low, final int high) {
+    public static boolean isSorted(final Comparable[] a, final int low,
+     final int high) {
         for (int i = low + 1; i <= high; i++) {
             if (less(a[i], a[i - 1])) {
                 return false;
