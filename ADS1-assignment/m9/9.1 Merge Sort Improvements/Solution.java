@@ -12,7 +12,6 @@ class Merge {
      */
 
     Merge() {
-        
     }
     /**
      * Constructs the object.
