@@ -35,13 +35,9 @@ class Merge {
         for (int k = low; k <= high; k++) {
             if (i > mid) {
                 newarray[k] = array[j++];
-            }
-
-            else if (j > high) {
+            } else if (j > high) {
                 newarray[k] = array[i++];
-            }
-
-            else if (less(array[j], array[i])) {
+            } else if (less(array[j], array[i])) {
                 newarray[k] = array[j++];
             } else {
                 newarray[k] = array[i++];
