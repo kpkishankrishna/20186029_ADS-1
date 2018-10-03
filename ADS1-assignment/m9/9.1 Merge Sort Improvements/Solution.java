@@ -11,7 +11,9 @@ class Merge {
      * Constructs the object.
      */
 
-    Merge() {}
+    Merge() {
+        
+    }
     /**
      * Constructs the object.
      */
@@ -28,7 +30,7 @@ class Merge {
      * @param      high      The high
      */
     private static void merge(final Comparable[] array,
-     final Comparable[] newarray,final int low, final int mid,
+     final Comparable[] newarray, final int low, final int mid,
       final int high) {
         assert isSorted(array, low, mid);
         assert isSorted(array, mid + 1, high);
