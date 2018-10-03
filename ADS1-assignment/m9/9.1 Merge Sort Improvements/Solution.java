@@ -29,7 +29,7 @@ class Merge {
 	 * @param      mid       The middle
 	 * @param      high      The high
 	 */
-	private static void merge(Comparable[] array, Comparable[] newarray, int low, int mid, int high) {
+	private static void merge(final Comparable[] array, final Comparable[] newarray, final int low, final int mid, final int high) {
 		assert isSorted(array, low, mid);
 		assert isSorted(array, mid + 1, high);
 
@@ -169,6 +169,7 @@ class Merge {
 	}
 }
 /**
+ *
  * Class for solution.
  */
 class Solution {
