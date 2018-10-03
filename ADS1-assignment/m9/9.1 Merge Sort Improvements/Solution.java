@@ -59,7 +59,7 @@ class Merge {
 	 * @param      low       The low
 	 * @param      high      The high
 	 */
-	private static void sort(Comparable[] array, Comparable[] newarray, int low, int high) {
+	private static void sort(final Comparable[] array, final Comparable[] newarray, final int low, final int high) {
 		if (high <= low + CUTOFF) {
 			insertionSort(newarray, low, high);
 			System.out.println("Insertion sort method invoked...");
@@ -83,7 +83,7 @@ class Merge {
 	 *
 	 * @param      a     { parameter_description }
 	 */
-	public static void sort(Comparable[] a) {
+	public static void sort(final Comparable[] a) {
 		Comparable[] aux = a.clone();
 		sort(aux, a, 0, a.length - 1);
 		assert isSorted(a);
@@ -96,7 +96,7 @@ class Merge {
 	 * @param      high  The high
 	 */
 
-	public static void insertionSort(Comparable[] a, int low, int high) {
+	public static void insertionSort(final Comparable[] a, final int low, final int high) {
 		for (int i = low; i <= high; i++)
 			for (int j = i; j > low && less(a[j], a[j - 1]); j--)
 				exch(a, j, j - 1);
@@ -108,7 +108,7 @@ class Merge {
 	 * @param      i     { parameter_description }
 	 * @param      j     { parameter_description }
 	 */
-	public static void exch(Comparable[] a, int i, int j) {
+	public static void exch(final Comparable[] a, final int i, final int j) {
 		Comparable swap = a[i];
 		a[i] = a[j];
 		a[j] = swap;
@@ -121,7 +121,7 @@ class Merge {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public static boolean less(Comparable a, Comparable b) {
+	public static boolean less(final Comparable a, final Comparable b) {
 		return a.compareTo(b) < 0;
 	}
 	/**
@@ -131,7 +131,7 @@ class Merge {
 	 *
 	 * @return     True if sorted, False otherwise.
 	 */
-	public static boolean isSorted(Comparable[] a) {
+	public static boolean isSorted(final Comparable[] a) {
 		return isSorted(a, 0, a.length - 1);
 	}
 	/**
@@ -144,7 +144,7 @@ class Merge {
 	 * @return     True if sorted, False otherwise.
 	 */
 
-	public static boolean isSorted(Comparable[] a, int low, int high) {
+	public static boolean isSorted(final Comparable[] a, final int low, final int high) {
 		for (int i = low + 1; i <= high; i++)
 			if (less(a[i], a[i - 1])) {
 				return false;
@@ -158,7 +158,7 @@ class Merge {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public static Object show(Object[] a) {
+	public static Object show(final Object[] a) {
 		String s = "[";
 		int i;
 		for (i = 0; i < a.length - 1; i++) {
@@ -173,7 +173,7 @@ class Merge {
  * Class for solution.
  */
 class Solution {
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Merge m = new Merge();
 		Scanner s = new Scanner(System.in);
 		while (s.hasNextLine()) {
