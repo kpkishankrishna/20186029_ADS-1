@@ -1,11 +1,10 @@
-import java.util.Arrays;
 import java.util.Scanner;
 /**
  * Class for merge.
  */
 class Merge {
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	private static final int CUTOFF = 7;
 	/**
@@ -22,7 +21,7 @@ class Merge {
 
 	// }
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      array     The array
 	 * @param      newarray  The newarray
@@ -53,7 +52,7 @@ class Merge {
 		assert isSorted(newarray, low, high);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      array     The array
 	 * @param      newarray  The newarray
@@ -80,7 +79,7 @@ class Merge {
 		merge(array, newarray, low, mid, high);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 */
@@ -90,7 +89,7 @@ class Merge {
 		assert isSorted(a);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 * @param      low   The low
@@ -103,7 +102,7 @@ class Merge {
 				exch(a, j, j - 1);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 * @param      i     { parameter_description }
@@ -115,7 +114,7 @@ class Merge {
 		a[j] = swap;
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 * @param      b     { parameter_description }
@@ -153,7 +152,7 @@ class Merge {
 		return true;
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      a     { parameter_description }
 	 *
