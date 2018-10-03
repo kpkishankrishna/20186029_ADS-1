@@ -27,7 +27,9 @@ class Merge {
      * @param      mid       The middle
      * @param      high      The high
      */
-    private static void merge(final Comparable[] array, final Comparable[] newarray, final int low, final int mid, final int high) {
+    private static void merge(final Comparable[] array,
+     final Comparable[] newarray,final int low, final int mid,
+      final int high) {
         assert isSorted(array, low, mid);
         assert isSorted(array, mid + 1, high);
 
@@ -53,7 +55,8 @@ class Merge {
      * @param      low       The low
      * @param      high      The high
      */
-    private static void sort(final Comparable[] array, final Comparable[] newarray, final int low, final int high) {
+    private static void sort(final Comparable[] array, final Comparable[] newarray,
+     final int low, final int high) {
         if (high <= low + CUTOFF) {
             insertionSort(newarray, low, high);
             System.out.println("Insertion sort method invoked...");
