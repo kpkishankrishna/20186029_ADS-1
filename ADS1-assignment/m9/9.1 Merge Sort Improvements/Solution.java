@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 /**
  * Class for merge.
  */
@@ -14,6 +15,12 @@ class Merge {
 	Merge() {
 
 	}
+	/**
+	 * Constructs the object.
+	 */
+	// private Merge() {
+
+	// }
 	/**
 	 * { function_description }
 	 *
