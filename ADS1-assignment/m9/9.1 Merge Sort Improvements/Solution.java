@@ -143,10 +143,11 @@ class Merge {
      */
 
     public static boolean isSorted(final Comparable[] a, final int low, final int high) {
-        for (int i = low + 1; i <= high; i++)
+        for (int i = low + 1; i <= high; i++) {
             if (less(a[i], a[i - 1])) {
                 return false;
             }
+        }
         return true;
     }
     /**
@@ -171,6 +172,17 @@ class Merge {
  * Class for solution.
  */
 class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);
