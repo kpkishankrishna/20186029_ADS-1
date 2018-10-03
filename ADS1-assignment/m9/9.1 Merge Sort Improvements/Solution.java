@@ -95,10 +95,12 @@ class Merge {
      */
 
     public static void insertionSort(final Comparable[] a, final int low, final int high) {
-        for (int i = low; i <= high; i++)
-            for (int j = i; j > low && less(a[j], a[j - 1]); j--)
+        for (int i = low; i <= high; i++){
+            for (int j = i; j > low && less(a[j], a[j - 1]); j--){
                 exch(a, j, j - 1);
-    }
+            }
+        }
+        }
     /**
      * { function_description }.
      *
@@ -171,7 +173,7 @@ class Merge {
  *
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
