@@ -72,7 +72,7 @@ class Merge {
             }
             System.out.
             println
-            ("Array is already sorted. So, skipped the call to merge...");
+        ("Array is already sorted. So, skipped the call to merge...");
             return;
         }
         merge(array, newarray, low, mid, high);
