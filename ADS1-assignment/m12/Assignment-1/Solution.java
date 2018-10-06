@@ -20,7 +20,7 @@ public class Solution {
              studentinfo[6]);
         }
         Merge.sort(qualifiedarray);
-        for (int i = 0; i < vacancies; i++) {
+        for (int i = 0; i < qualified; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
 
