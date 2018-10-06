@@ -36,6 +36,7 @@ public class Solution {
         for (int i = unreserved; i < qualified; i++) {
             if (qualifiedarray[i].reservation.compareTo("Open") != 0) {
                 System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
+                System.out.println("hbcjhbcdj");
 
             }
         }
