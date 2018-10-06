@@ -59,7 +59,6 @@ class Merge {
      Comparable[] newarray, final int low, final int high) {
         if (high <= low + CUTOFF) {
             insertionSort(newarray, low, high);
-            System.out.println("Insertion sort method invoked...");
             return;
         }
         int mid = low + (high - low) / 2;

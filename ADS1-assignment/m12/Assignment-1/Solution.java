@@ -13,7 +13,7 @@ public class Solution {
         int sccatogory = Integer.parseInt(sc.nextLine());
         int stcatagory = Integer.parseInt(sc.nextLine());
         Student[] qualifiedarray = new Student[qualified];
-        for (int i = 0; i < qualified; i++){
+        for (int i = 0; i < qualified; i++) {
             String[] studentinfo = sc.nextLine().split(",");
             qualifiedarray[i] = new Student(studentinfo[0], studentinfo[1], Integer.parseInt(studentinfo[2]),
              Integer.parseInt(studentinfo[3]), Integer.parseInt(studentinfo[4]), Integer.parseInt(studentinfo[5]), 
@@ -23,7 +23,9 @@ public class Solution {
         for (int i = 0; i < qualified; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        System.out.println("\n" + "wkcm");
+        System.out.println();
+        
+
 
 
 
