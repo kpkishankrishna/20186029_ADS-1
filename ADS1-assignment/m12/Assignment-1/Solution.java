@@ -30,15 +30,15 @@ public class Solution {
         }
         System.out.println();            
         // Merge.sort(reserved);
-        for (int i = 0; i < unreserved; i++) {
+        for (int i = 0; i < vacancies; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        for (int i = qualified; i < qualified + bccatagory+ sccatogory + stcatagory; i++) {
-            if (qualifiedarray[i].reservation.compareTo("Open") != 0) {
-                System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
+        // for (int i = qualified; i < qualified + bccatagory+ sccatogory + stcatagory; i++) {
+        //     if (qualifiedarray[i].reservation.compareTo("Open") != 0) {
+        //         System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
 
-            }
-        }
+        //     }
+        // }
         // System.out.println("cskjnksdnc");
 
 
