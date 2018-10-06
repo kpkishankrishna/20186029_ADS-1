@@ -19,10 +19,10 @@ public class Solution {
             qualifiedarray[i] = new Student(studentinfo[0], studentinfo[1], Integer.parseInt(studentinfo[2]),
              Integer.parseInt(studentinfo[3]), Integer.parseInt(studentinfo[4]), Integer.parseInt(studentinfo[5]), 
              studentinfo[6]);
-            // if (studentinfo[6].compareTo("Open") != 0)
-            //     reserved[i] = new Student(studentinfo[0], studentinfo[1], Integer.parseInt(studentinfo[2]),
-            //      Integer.parseInt(studentinfo[3]), Integer.parseInt(studentinfo[4]), Integer.parseInt(studentinfo[5]), 
-            //      studentinfo[6]);
+            if (studentinfo[6].compareTo("Open") != 0)
+                reserved[i] = new Student(studentinfo[0], studentinfo[1], Integer.parseInt(studentinfo[2]),
+                 Integer.parseInt(studentinfo[3]), Integer.parseInt(studentinfo[4]), Integer.parseInt(studentinfo[5]), 
+                 studentinfo[6]);
         }
         Merge.sort(qualifiedarray);
         for (int i = 0; i < qualified; i++) {
