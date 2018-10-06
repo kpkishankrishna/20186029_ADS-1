@@ -23,8 +23,13 @@ public class Solution {
         for (int i = 0; i < qualified; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        System.out.println();
-        
+        System.out.println("\n");
+        for (int i = 0; i < vacancies; i++) {
+            System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
+
+        }
+
+
 
 
 
