@@ -30,12 +30,12 @@ public class Solution {
         }
         System.out.println("\n");            
         // Merge.sort(reserved);
-        for (int i = 0; i < unreserved; i++) {
+        for (int i = 0; i < unreserved + sccatogory + bccatagory + stcatagory; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        for (int i = 0; i < bccatagory+ sccatogory + stcatagory; i++) {
-            System.out.println(reserved[i].studentname + ","+ reserved[i].totalmarks + "," + reserved[i].reservation);
-        }
+        // for (int i = 0; i < bccatagory+ sccatogory + stcatagory; i++) {
+        //     System.out.println(reserved[i].studentname + ","+ reserved[i].totalmarks + "," + reserved[i].reservation);
+        // }
         // System.out.println("cskjnksdnc");
 
 
