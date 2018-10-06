@@ -13,7 +13,7 @@ public class Solution {
         int sccatogory = Integer.parseInt(sc.nextLine());
         int stcatagory = Integer.parseInt(sc.nextLine());
         Student[] qualifiedarray = new Student[qualified];
-        Student[] reserved = new Student[bccatagory+sccatogory +stcatagory];
+        Student[] reserved = new Student[10];
         for (int i = 0; i < qualified; i++) {
             String[] studentinfo = sc.nextLine().split(",");
             qualifiedarray[i] = new Student(studentinfo[0], studentinfo[1], Integer.parseInt(studentinfo[2]),
