@@ -33,12 +33,12 @@ class Student implements Comparable<Student> {
         if (this.subject1marks > that.subject1marks) {
             return -1;
         }
-        // if (this.dateofbirth.compareTo(that.dateofbirth) < 0) {
-        //     return 1;
-        // }
-        // if (this.dateofbirth.compareTo(that.dateofbirth) > 0) {
-        //     return -1;
-        // }
+        if (this.dateofbirth.compareTo(that.dateofbirth) < 0) {
+            return 1;
+        }
+        if (this.dateofbirth.compareTo(that.dateofbirth) > 0) {
+            return -1;
+        }
         else {
             return 0;
         }
