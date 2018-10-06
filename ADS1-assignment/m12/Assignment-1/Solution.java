@@ -24,10 +24,10 @@ public class Solution {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
         System.out.println("\n");
-        for (int i = 0; i < unreserved; i++) {
+        for (int i = 0; i < vacancies; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        System.out.println("ghvg");
+        // System.out.println("ghvg");
 
 
 
