@@ -21,9 +21,8 @@ public class Solution {
         }
         Merge.sort(qualifiedarray);
         for (int i = 0; i < qualified; i++) {
-            System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
+            System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation + "\n");
         }
-        System.out.println("\n");
         System.out.println("wkcm");
 
 
