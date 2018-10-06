@@ -29,7 +29,7 @@ public class Solution {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
         System.out.println();            
-        // Merge.sort(reserved);
+        Merge.sort(reserved);
         for (int i = 0; i < unreserved + sccatogory + bccatagory + stcatagory; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
