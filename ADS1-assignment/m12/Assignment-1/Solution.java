@@ -28,7 +28,7 @@ public class Solution {
         for (int i = 0; i < qualified; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
         }
-        System.out.println("\n");            
+        // System.out.println("\n");            
         // Merge.sort(reserved);
         for (int i = 0; i < unreserved + sccatogory + bccatagory + stcatagory; i++) {
             System.out.println(qualifiedarray[i].studentname + ","+ qualifiedarray[i].totalmarks + "," + qualifiedarray[i].reservation);
