@@ -144,6 +144,7 @@ public class Solution {
 		for (int i =0; i < 5; i++) {
 			System.out.println(minpq6.delMin());
 		}
+		System.out.println();
 		// MaxPQ<Stock> maxpq1 = new MaxPQ<Stock>(numberofcompanies);
 		// MinPQ<Stock> minpq1 = new MinPQ<Stock>(numberofcompanies); 
 		// for (int i = 0; i < numberofcompanies; i++) {
