@@ -34,7 +34,7 @@ class Stock implements Comparable<Stock> {
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int numberofcompanies = sc.nextInt();
+		int numberofcompanies = Integer.parseInt(sc.nextLine());
 		int count = 0;
 		MaxPQ<Stock> maxpq1 = new MaxPQ<Stock>();
 		MinPQ<Stock> minpq1 = new MinPQ<Stock>(); 
