@@ -57,8 +57,8 @@ public class Solution {
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
-			maxpq1.insert(object);
-			minpq1.insert(object);
+			maxpq2.insert(object);
+			minpq2.insert(object);
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
