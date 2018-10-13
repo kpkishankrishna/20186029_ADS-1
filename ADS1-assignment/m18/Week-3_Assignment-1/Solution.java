@@ -16,10 +16,10 @@ class Stock implements Comparable<Stock> {
 		return company + " " + changeinpercent;
 	}
 	public int compareTo(final Stock that) {
-		if (this.getchangeinpercent() > that.getchangeinpercent()) {
+		if (this.getchangeinpercent() < that.getchangeinpercent()) {
 			return -1;
 		}
-		if (this.getchangeinpercent() < that.getchangeinpercent()) {
+		if (this.getchangeinpercent() > that.getchangeinpercent()) {
 			return 1;
 		}
 		if (this.getcompany().compareTo(that.getcompany()) < 0) {
