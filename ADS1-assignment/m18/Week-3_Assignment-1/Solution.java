@@ -55,7 +55,7 @@ public class Solution {
 			}
 
 
-			else {
+			else if (count > numberofcompanies) {
 				count = 0;
 			}
 
