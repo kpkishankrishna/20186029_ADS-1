@@ -1,5 +1,11 @@
 import java.util.Scanner;
+/**
+ * Class for stock.
+ */
 class Stock implements Comparable<Stock> {
+	/**
+	 * company.
+	 */
 	private String company;
 	private Double changeinpercent;
 	public Stock(String company, Double changeinpercent) {
@@ -29,7 +35,7 @@ class Stock implements Comparable<Stock> {
 			return -1;
 		}
 		return 0;
- 	}
+	}
 }
 public class Solution {
 	public static void main(String[] args) {
@@ -37,7 +43,7 @@ public class Solution {
 		int numberofcompanies = Integer.parseInt(sc.nextLine());
 		int count = 0;
 		MaxPQ<Stock> maxpq1 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq1 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq1 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -46,16 +52,16 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq1.delMax());			
+			System.out.println(maxpq1.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq1.delMin());
 		}
 		System.out.println();
 		MaxPQ<Stock> maxpq2 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq2 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq2 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -64,17 +70,17 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq2.delMax());			
+			System.out.println(maxpq2.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq2.delMin());
 		}
 		System.out.println();
-		
+
 		MaxPQ<Stock> maxpq3 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq3 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq3 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -83,16 +89,16 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq3.delMax());			
+			System.out.println(maxpq3.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq3.delMin());
 		}
 		System.out.println();
 		MaxPQ<Stock> maxpq4 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq4 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq4 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -101,16 +107,16 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq4.delMax());			
+			System.out.println(maxpq4.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq4.delMin());
 		}
 		System.out.println();
 		MaxPQ<Stock> maxpq5 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq5 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq5 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -119,16 +125,16 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq5.delMax());			
+			System.out.println(maxpq5.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq5.delMin());
 		}
 		System.out.println();
 		MaxPQ<Stock> maxpq6 = new MaxPQ<Stock>();
-		MinPQ<Stock> minpq6 = new MinPQ<Stock>(); 
+		MinPQ<Stock> minpq6 = new MinPQ<Stock>();
 		for (int i = 0; i < numberofcompanies; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
@@ -137,16 +143,16 @@ public class Solution {
 			count++;
 		}
 		for (int i = 0; i < 5; i++) {
-			System.out.println(maxpq6.delMax());			
+			System.out.println(maxpq6.delMax());
 
 		}
 		System.out.println();
-		for (int i =0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			System.out.println(minpq6.delMin());
 		}
 		System.out.println();
 		// MaxPQ<Stock> maxpq1 = new MaxPQ<Stock>(numberofcompanies);
-		// MinPQ<Stock> minpq1 = new MinPQ<Stock>(numberofcompanies); 
+		// MinPQ<Stock> minpq1 = new MinPQ<Stock>(numberofcompanies);
 		// for (int i = 0; i < numberofcompanies; i++) {
 		// 	String[] tokens = sc.nextLine().split(",");
 		// 	Stock object = new Stock(tokens[0], Double.parseDouble(tokens[1]));
