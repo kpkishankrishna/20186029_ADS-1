@@ -42,7 +42,7 @@ public final class Solution {
                     System.out.println(hash.get(token[1])[1]);
                 }
                 if (Integer.parseInt(token[2]) == 1) {
-                    System.out.println(hash.get(token[1])[1]);
+                    System.out.println(hash.get(token[1])[0]);
                 }
 
                 
