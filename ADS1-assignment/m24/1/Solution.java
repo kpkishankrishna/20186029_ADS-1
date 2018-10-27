@@ -35,7 +35,10 @@ public final class Solution {
                 // hash.put(tokens[1], Integer.parseInt(tokens[2]));
                 // break;
             case "get":
-                System.out.println(Arrays.toString(hash.get(token[1])));
+                // System.out.println(Arrays.toString(hash.get(token[1])));
+                String ans = Arrays.toString(hash.get(token[1]));
+                String[] answer = ans.split(",");
+                System.out.println(answer[1]);
                 
                 break;
             // case "delete":
