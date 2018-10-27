@@ -27,17 +27,17 @@ public final class Solution {
         }
         int info = Integer.parseInt(scan.nextLine());
         while (info > 0) {
-            String[] tokens = scan.nextLine().split(",");
-            switch (tokens[0]) {
+            String[] token = scan.nextLine().split(",");
+            switch (token[0]) {
             // case "put":
                 // hash.put(tokens[1], Integer.parseInt(tokens[2]));
                 // break;
             case "get":
-                System.out.println(hash.get(tokens[1]));
+                System.out.println(hash.get(token[1]));
                 break;
-            case "delete":
-                hash.delete(tokens[1]);
-                break;
+            // case "delete":
+            //     hash.delete(tokens[1]);
+            //     break;
             }
             info--;
 
