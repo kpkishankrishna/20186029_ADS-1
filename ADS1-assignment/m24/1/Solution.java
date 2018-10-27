@@ -52,6 +52,8 @@ public final class Solution {
                 // case "delete":
                 //     hash.delete(tokens[1]);
                 //     break;
+            default:
+                break;
             }
             // System.out.println("gbvjgnj");
             info--;
