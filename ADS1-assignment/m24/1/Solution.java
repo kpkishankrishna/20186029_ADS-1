@@ -41,7 +41,7 @@ public final class Solution {
                 if (Integer.parseInt(token[2]) == 1) {
                     System.out.println(hash.get(token[1])[0]);
                 }
-                if (Integer.parseInt(token[2]) == 2) {
+                else if (Integer.parseInt(token[2]) == 2) {
                     System.out.println(hash.get(token[1])[1]);
                 }
 
