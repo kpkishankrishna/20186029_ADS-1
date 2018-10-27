@@ -39,6 +39,7 @@ public final class Solution {
             //     hash.delete(tokens[1]);
             //     break;
             }
+            System.out.println("gbvjgnj");
             info--;
 
         }
