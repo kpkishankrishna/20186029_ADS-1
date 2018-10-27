@@ -39,7 +39,7 @@ public final class Solution {
                 try {
                     if (Integer.parseInt(token[2]) == 1) {
                         System.out.println(hash.get(token[1])[0]);
-                    } else if (Integer.parseInt(token[2]) == 2) {
+                    } else if (Double.parseDouble(token[2]) == 2) {
                         System.out.println(hash.get(token[1])[1]);
                     }
                 } catch (Exception e) {
