@@ -28,7 +28,6 @@ public final class Solution {
             lines--;
         }
         int info = Integer.parseInt(scan.nextLine());
-        System.out.println("-----------------------");
         while (info > 0) {
             String[] token = scan.nextLine().split(" ");
             switch (token[0]) {
