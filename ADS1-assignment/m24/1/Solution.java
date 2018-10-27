@@ -30,6 +30,7 @@ public final class Solution {
         int info = Integer.parseInt(scan.nextLine());
         while (info > 0) {
             String[] token = scan.nextLine().split(" ");
+            System.out.println("....................................");
             switch (token[0]) {
             // case "put":
                 // hash.put(tokens[1], Integer.parseInt(tokens[2]));
