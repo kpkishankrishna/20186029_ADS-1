@@ -39,7 +39,7 @@ public final class Solution {
                 // String ans = Arrays.toString(hash.get(token[1]));
                 // String[] answer = ans.split(",");
                 if (Integer.parseInt(token[2]) == 0) {
-                    System.out.println(hash.get(token[1])[2]);
+                    System.out.println(hash.get(token[1])[1]);
                 }
                 if (Integer.parseInt(token[2]) == 1) {
                     System.out.println(hash.get(token[1])[1]);
