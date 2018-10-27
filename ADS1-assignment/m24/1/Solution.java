@@ -42,7 +42,7 @@ public final class Solution {
                     } else if (Integer.parseInt(token[2]) == 2) {
                         System.out.println(hash.get(token[1])[1]);
                     }
-                } catch (NullPointerException e) {
+                } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
                 }
 
