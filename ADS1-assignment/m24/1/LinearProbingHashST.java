@@ -117,13 +117,14 @@ public class LinearProbingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(Key key) {
-        // if (key == null) throw new IllegalArgumentException("argument to get() is null");
-        if (key == null) {
-            System.out.println("Student doesn't exists...");
-        }
+        if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        // if (key == null) {
+        //     System.out.println("Student doesn't exists...");
+        // }
         for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
             if (keys[i].equals(key))
                 return vals[i];
+        System.out.println("Student doesn't exists...");
         return null;
     }
 
