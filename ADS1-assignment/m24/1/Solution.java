@@ -32,35 +32,33 @@ public final class Solution {
             String[] token = scan.nextLine().split(" ");
             switch (token[0]) {
             // case "put":
-                // hash.put(tokens[1], Integer.parseInt(tokens[2]));
-                // break;
+            // hash.put(tokens[1], Integer.parseInt(tokens[2]));
+            // break;
             case "get":
                 // System.out.println(Arrays.toString(hash.get(token[1])));
                 // String ans = Arrays.toString(hash.get(token[1]));
                 // String[] answer = ans.split(",");
                 try {
                     if (Integer.parseInt(token[2]) == 1) {
-                    System.out.println(hash.get(token[1])[0]);
-                    }
-                    else if (Integer.parseInt(token[2]) == 2) {
+                        System.out.println(hash.get(token[1])[0]);
+                    } else if (Integer.parseInt(token[2]) == 2) {
                         System.out.println(hash.get(token[1])[1]);
                     }
-                } catch(NullPointerException e) 
-                { 
-                    System.out.println("Student doesn't exists..."); 
-                } 
+                } catch (NullPointerException e) {
+                    System.out.println("Student doesn't exists...");
+                }
 
-                
-                
+
+
                 break;
-            // case "delete":
-            //     hash.delete(tokens[1]);
-            //     break;
+                // case "delete":
+                //     hash.delete(tokens[1]);
+                //     break;
             }
             // System.out.println("gbvjgnj");
             info--;
 
         }
-        
+
     }
 }
