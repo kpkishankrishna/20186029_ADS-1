@@ -38,12 +38,17 @@ public final class Solution {
                 // System.out.println(Arrays.toString(hash.get(token[1])));
                 // String ans = Arrays.toString(hash.get(token[1]));
                 // String[] answer = ans.split(",");
-                if (Integer.parseInt(token[2]) == 1) {
+                try {
+                    if (Integer.parseInt(token[2]) == 1) {
                     System.out.println(hash.get(token[1])[0]);
-                }
-                else if (Integer.parseInt(token[2]) == 2) {
-                    System.out.println(hash.get(token[1])[1]);
-                }
+                    }
+                    else if (Integer.parseInt(token[2]) == 2) {
+                        System.out.println(hash.get(token[1])[1]);
+                    }
+                } catch(NullPointerException e) 
+                { 
+                    System.out.println("Student doesn't exists..."); 
+                } 
 
                 
                 
