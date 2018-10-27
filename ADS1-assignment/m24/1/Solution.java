@@ -38,7 +38,7 @@ public final class Solution {
                 // System.out.println(Arrays.toString(hash.get(token[1])));
                 String ans = Arrays.toString(hash.get(token[1]));
                 String[] answer = ans.split(",");
-                System.out.println(answer[1]);
+                System.out.println(answer[0]);
                 
                 break;
             // case "delete":
