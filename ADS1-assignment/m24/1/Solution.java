@@ -28,9 +28,9 @@ public final class Solution {
             lines--;
         }
         int info = Integer.parseInt(scan.nextLine());
+        System.out.println("-----------------------");
         while (info > 0) {
             String[] token = scan.nextLine().split(" ");
-            System.out.println("....................................");
             switch (token[0]) {
             // case "put":
                 // hash.put(tokens[1], Integer.parseInt(tokens[2]));
