@@ -40,7 +40,7 @@ public final class Solution {
                     if (Double.parseDouble(token[2]) == 1) {
                         System.out.println(hash.get(token[1])[0]);
                     } else if (Double.parseDouble(token[2]) == 2) {
-                        System.out.println(hash.get(token[1])[1]);
+                        System.out.println(Double.parseDouble(hash.get(token[1])[1]));
                     }
                 } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
